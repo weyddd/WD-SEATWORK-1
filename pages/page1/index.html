@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jollibee Inspired Home Page</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Jollibee Inspired Page Two</title> <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -33,15 +31,15 @@
         <div class="header-main-nav">
             <div class="container flex justify-between items-center">
                 <div class="logo">
-                    <a href="./index.html">
+                    <a href="../index.html">
                         <img src="https://placehold.co/120x50/DA291C/FFFFFF?text=Jollibee" alt="Jollibee Logo" onerror="this.src='https://placehold.co/120x50/DA291C/FFFFFF?text=Jollibee';">
                     </a>
                 </div>
-               <nav class="main-nav-links">
-               <a href="../index.html" class="nav-item">Home</a>
-               <a href="#" class="nav-item">Menu</a>
-               <a href="#" class="nav-item">Stores</a>
-               <a href="../index.html" class="nav-item">&larr; Back to Home</a>
+                <nav class="main-nav-links">
+                    <a href="../index.html" class="nav-item nav-icon-only"><i class="fas fa-home"></i></a>
+                    <a href="#" class="nav-item">Menu</a>
+                    <a href="#" class="nav-item">Stores</a>
+                    <a href="../index.html" class="nav-item nav-icon-only"><i class="fas fa-angle-left"></i> Back</a>
                 </nav>
                 <div class="side-tab">
                     <p>Feedback</p>
@@ -49,6 +47,11 @@
             </div>
         </div>
     </header>
+
+    <main style="min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 50px 20px; background-color: var(--jollibee-light-grey);">
+        <h1>Welcome to Page Two!</h1>
+        <p>You've successfully navigated to the second page. Use the navigation links above to return to the homepage.</p>
+    </main>
 
     <footer class="main-footer">
         <div class="container footer-grid">
