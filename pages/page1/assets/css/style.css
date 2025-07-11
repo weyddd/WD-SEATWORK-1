@@ -140,6 +140,8 @@ body {
 .main-nav-links {
     display: flex;
     gap: 25px; /* Space between menu items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: flex-start; /* Align items to the start */
 }
 
 .nav-item {
@@ -197,23 +199,6 @@ main {
     flex-grow: 1; /* Allows main content to take available space */
     padding: 50px 20px;
 }
-
-.button {
-    display: inline-block;
-    background-color: var(--jollibee-red);
-    color: var(--jollibee-white);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-.button:hover {
-    background-color: #B00500;
-}
-
 
 /* Footer Styles */
 .main-footer {
