@@ -3,103 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jollibee Inspired Page Two</title> <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Adidas-like Header and Footer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for navigation icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-top-bar">
-            <div class="container flex justify-between items-center">
-                <div class="address-selector">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <select>
-                        <option value="">Select your Address</option>
-                        <option value="qc">Quezon City</option>
-                        <option value="mnl">Manila</option>
-                        <option value="ceb">Cebu</option>
-                    </select>
-                </div>
-                <div class="top-actions">
-                    <a href="#" class="top-action-link"><i class="fas fa-user"></i> Register / Log In</a>
-                    <a href="#" class="top-order-button"><i class="fas fa-shopping-cart"></i> Order Now</a>
-                </div>
-            </div>
-        </div>
-        <div class="header-main-nav">
-            <div class="container flex justify-between items-center">
-                <div class="logo">
-                    <a href="../index.html">
-                        <img src="https://placehold.co/120x50/DA291C/FFFFFF?text=Jollibee" alt="Jollibee Logo" onerror="this.src='https://placehold.co/120x50/DA291C/FFFFFF?text=Jollibee';">
-                    </a>
-                </div>
-                <nav class="main-nav-links">
-                    <a href="../index.html" class="nav-item nav-icon-only"><i class="fas fa-home"></i></a>
-                    <a href="#" class="nav-item">Menu</a>
-                    <a href="#" class="nav-item">Stores</a>
-                    <a href="../index.html" class="nav-item nav-icon-only"><i class="fas fa-angle-left"></i> Back</a>
-                </nav>
-                <div class="side-tab">
-                    <p>Feedback</p>
-                </div>
-            </div>
-        </div>
-    </header>
+    <!-- TOP NAVIGATION LINKS: BACK, HOME, NEXT Buttons -->
+    <div class="top-nav-links">
+        <a class="nav-button" href="#" title="Previous"><i class="fas fa-backward"></i> BACK</a>
+        <a class="nav-button" href="#" title="Home"><i class="fas fa-home"></i> HOME</a>
+        <a class="nav-button" href="#" title="Next"><i class="fas fa-forward"></i> NEXT</a>
+    </div>
 
-    <main style="min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 50px 20px; background-color: var(--jollibee-light-grey);">
-        <h1>Welcome to Page Two!</h1>
-        <p>You've successfully navigated to the second page. Use the navigation links above to return to the homepage.</p>
-    </main>
+    <div class="page-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo-section">
+                <!-- Adidas Logo SVG (simplified for demonstration) -->
+                <a href="#" class="adidas-logo">
+                    <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0L0 12L12 24L24 12L12 0ZM12 4.08L19.92 12L12 19.92L4.08 12L12 4.08ZM12 8.16L15.92 12L12 15.92L8.08 12L12 8.16Z"/>
+                    </svg>
+                </a>
+            </div>
 
-    <footer class="main-footer">
-        <div class="container footer-grid">
-            <div class="footer-column">
-                <h4>About Us</h4>
-                <ul>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li><a href="#">News & Updates</a></li>
-                </ul>
+            <!-- Main Navigation Links -->
+            <nav class="nav-center">
+                <a href="#">SHOES</a>
+                <a href="#">MEN</a>
+                <a href="#">WOMEN</a>
+                <a href="#">KIDS</a>
+                <a href="#">SPORTS</a>
+                <a href="#">BRANDS</a>
+                <a href="#">OUTLET</a>
+            </nav>
+
+            <!-- Search and Icons -->
+            <div class="right-section">
+                <input type="text" placeholder="Search" class="search-box" />
+                <button class="icon-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                </button>
+                <button class="icon-button relative">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    <span class="notification-badge">1</span>
+                </button>
+                <button class="icon-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5H3m4 8v3a1 1 0 001 1h8a1 1 0 001-1v-3m-8 4h.01M17 17h.01"></path></svg>
+                </button>
             </div>
-            <div class="footer-column">
-                <h4>Customer Service</h4>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Feedback</a></li>
-                </ul>
+        </header>
+
+        <!-- Main Content Area (Placeholder) -->
+        <main class="main-content">
+            <p class="text-center text-gray-600 mb-8">
+                This is the main content area. You can add your product listings and other elements here.
+            </p>
+            <!-- Placeholder product cards for visual context -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 p-4">
+                <div class="bg-white rounded-lg shadow p-4 h-64 flex items-center justify-center">Product Card 1</div>
+                <div class="bg-white rounded-lg shadow p-4 h-64 flex items-center justify-center">Product Card 2</div>
+                <div class="bg-white rounded-lg shadow p-4 h-64 flex items-center justify-center">Product Card 3</div>
+                <div class="bg-white rounded-lg shadow p-4 h-64 flex items-center justify-center">Product Card 4</div>
+                <div class="bg-white rounded-lg shadow p-4 h-64 flex items-center justify-center">Product Card 5</div>
+                <div class="bg-white rounded-lg shadow p-4 h-64 flex items-center justify-center">Product Card 6</div>
+                <div class="bg-white rounded-lg shadow p-4 h-64 flex items-center justify-center">Product Card 7</div>
+                <div class="bg-white rounded-lg shadow p-4 h-64 flex items-center justify-center">Product Card 8</div>
             </div>
-            <div class="footer-column">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Connect With Us</h4>
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h4>PRODUCTS</h4>
+                    <ul>
+                        <li><a href="#">Footwear</a></li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Release Dates</a></li>
+                        <li><a href="#">Top Sellers</a></li>
+                        <li><a href="#">Member Exclusives</a></li>
+                        <li><a href="#">Outlet</a></li>
+                    </ul>
                 </div>
-                <p class="download-app">Download the App!</p>
-                <div class="app-buttons">
-                    <a href="#" aria-label="Download on App Store"><img src="https://placehold.co/120x40/000000/FFFFFF?text=App+Store" alt="App Store" onerror="this.src='https://placehold.co/120x40/000000/FFFFFF?text=App+Store';"></a>
-                    <a href="#" aria-label="Get it on Google Play"><img src="https://placehold.co/120x40/000000/FFFFFF?text=Google+Play" alt="Google Play" onerror="this.src='https://placehold.co/120x40/000000/FFFFFF?text=Google+Play';"></a>
+
+                <div class="footer-column">
+                    <h4>SPORTS</h4>
+                    <ul>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Golf</a></li>
+                        <li><a href="#">Gym & Training</a></li>
+                        <li><a href="#">Football</a></li>
+                        <li><a href="#">Basketball</a></li>
+                        <li><a href="#">Tennis</a></li>
+                        <li><a href="#">Outdoor</a></li>
+                        <li><a href="#">Swimming</a></li>
+                        <li><a href="#">Cycling</a></li>
+                        <li><a href="#">Motorsport</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>COLLECTIONS</h4>
+                    <ul>
+                        <li><a href="#">Pharrell Williams</a></li>
+                        <li><a href="#">Ultraboost</a></li>
+                        <li><a href="#">Pureboost</a></li>
+                        <li><a href="#">Predator</a></li>
+                        <li><a href="#">Superstar</a></li>
+                        <li><a href="#">Stan Smith</a></li>
+                        <li><a href="#">NMD</a></li>
+                        <li><a href="#">Adicolor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>COMPANY INFO</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">adidas stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>SUPPORT</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Store Finder</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Promotions</a></li>
+                        <li><a href="#">Customer Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>FOLLOW US</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitterx--v1.png" alt="X/Twitter"></a></li>
+                        <li><a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/tiktok--v1.png" alt="TikTok"></a></li>
+                        <li><a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play--v1.png" alt="YouTube"></a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2023 Jollibee Foods Corporation. All rights reserved.</p>
+
+            <div class="footer-bottom">
+                <div class="copyright-links">
+                    <span>© 2023 adidas Philippines Inc. All rights reserved</span>
+                    <a href="#">Cookie Settings</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Imprint</a>
+                </div>
+                <div class="language-selector">Philippines</div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
