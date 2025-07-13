@@ -1,0 +1,390 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #eaeded; /* Light gray background */
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* TOP NAVIGATION LINKS: BACK, HOME, NEXT Buttons (from previous request) */
+.top-nav-links {
+    background-color: #ffffff;
+    padding: 8px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #000000;
+    font-weight: 600;
+}
+
+.top-nav-links .nav-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.top-nav-links .nav-button i {
+    margin-right: 4px;
+}
+
+.top-nav-links .nav-button:hover {
+    background-color: #e5e7eb;
+    text-decoration: none;
+}
+
+/* Header Section (Amazon Inspired) */
+.header {
+    background-color: #131921; /* Dark blue-gray */
+    color: #ffffff;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 60px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.header-left .logo-link {
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+.header-left .logo-link:hover {
+    border-color: #ffffff;
+}
+
+.header-left .amazon-logo {
+    height: 30px;
+    width: auto;
+    filter: brightness(0) invert(1); /* Makes the logo white */
+}
+
+.header-left .delivery-location {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+.header-left .delivery-location:hover {
+    border-color: #ffffff;
+}
+
+.header-left .delivery-location i {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}
+
+.header-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    min-width: 200px; /* Minimum width for search bar */
+}
+
+.search-bar {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-bar:focus-within {
+    outline: 3px solid #febe69; /* Amazon's focus color */
+}
+
+.search-dropdown {
+    background-color: #e6e6e6;
+    border: none;
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    outline: none;
+    font-size: 0.85rem;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-button {
+    background-color: #febd69; /* Amazon's search button color */
+    color: #131921;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+.search-button:hover {
+    background-color: #f3a847;
+}
+
+.header-right {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.header-right .nav-item {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+.header-right .nav-item:hover {
+    border-color: #ffffff;
+}
+
+.header-right .nav-item .fa-caret-down {
+    margin-left: 3px;
+}
+
+.header-right .cart-item {
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+}
+
+.header-right .cart-item .cart-count {
+    position: absolute;
+    top: 0px;
+    left: 18px;
+    background-color: transparent; /* No background */
+    color: #febd69; /* Yellow count */
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0;
+}
+
+/* Main Navigation Bar (below header) */
+.main-nav-bar {
+    background-color: #232f3e; /* Darker blue-gray */
+    color: #ffffff;
+    padding: 8px 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav-bar .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 6px 8px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+}
+.main-nav-bar .nav-link:hover {
+    border-color: #ffffff;
+}
+
+/* Responsive adjustments for header */
+@media (max-width: 1024px) { /* Adjust for smaller screens */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .header-left,
+    .header-center,
+    .header-right {
+        width: 100%;
+        justify-content: center;
+    }
+    .header-left {
+        justify-content: flex-start;
+    }
+    .header-right {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .search-bar {
+        max-width: none; /* Allow search bar to take full width */
+    }
+    .main-nav-bar .max-w-7xl {
+        overflow-x: auto; /* Allow horizontal scrolling for nav links */
+        white-space: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 5px; /* Add some padding for scrollbar */
+    }
+    .main-nav-bar .nav-link {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-right .nav-item:not(.cart-item) {
+        display: none; /* Hide account/orders on very small screens */
+    }
+    .header-right {
+        justify-content: center; /* Center cart when others are hidden */
+    }
+}
+
+/* Main Content Area */
+.main-content {
+    flex-grow: 1;
+    padding: 32px;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer Section (Amazon Inspired) */
+.footer {
+    margin-top: auto;
+    background-color: #232f3e; /* Darker blue-gray */
+    color: #ffffff;
+}
+
+.footer .back-to-top {
+    display: block;
+    background-color: #37475a; /* Darker blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease;
+}
+.footer .back-to-top:hover {
+    background-color: #485769;
+}
+
+.footer-links-section {
+    background-color: #232f3e;
+    padding: 40px 16px;
+    max-width: 1000px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Responsive columns */
+    gap: 20px;
+    border-bottom: 1px solid #3a4553;
+}
+
+.footer-column h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 7px;
+}
+
+.footer-column a {
+    color: #dddddd; /* Lighter gray for links */
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom-bar {
+    background-color: #131921; /* Dark blue-gray */
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.75rem;
+    color: #dddddd;
+}
+
+.footer-logo-locale {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo-locale .amazon-logo-footer {
+    height: 25px;
+    width: auto;
+    filter: brightness(0) invert(1); /* Makes the logo white */
+}
+
+.footer-logo-locale .locale-dropdown {
+    background-color: transparent;
+    color: #dddddd;
+    border: 1px solid #888888;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer-copyright-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px 15px;
+    text-align: center;
+}
+
+.footer-copyright-links a {
+    color: #dddddd;
+    text-decoration: none;
+}
+.footer-copyright-links a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .footer-bottom-bar {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px; /* Space between logo/locale and copyright */
+    }
+}
