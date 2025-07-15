@@ -93,30 +93,29 @@ WD-SEATWORK-1
 │  │  │  │  └─ # style.css
 │  │  │  └─ img\
 │  │  │     └─ ABIBAS.png
-│  │  └─ header&footer1.html
+│  │  └─ index.html
 │  ├─ page2\
 │  │  ├─ assets\
 │  │  │  ├─ css\
 │  │  │  │  └─ # style.css
-│  │  │  └─ header&footer2.html
+│  │  └─ index.html
 │  ├─ page3\
 │  │  ├─ assets\
 │  │  │  ├─ css\
 │  │  │  │  └─ # style.css
-│  │  │  └─ header&footer3.html
+│  │  └─ index.html
 │  ├─ page4\
 │  │  ├─ assets\
 │  │  │  ├─ css\
 │  │  │  │  └─ # style4.css
 │  │  │  └─ img\
 │  │  │     └─ amg.png
-│  │  └─ header&footer4.html
+│  │  └─ index.html
 │  └─ page5\
 │     ├─ assets\
 │     │  ├─ css\
 │     │  │  └─ # style5.css
-│     │  └─ header&footer5.html
-│     └─ header&footer5.html
+│     │  └─ index.html
 ├─ index.html
 └─ LICENSE
 └─ readme.md
